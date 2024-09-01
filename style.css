@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(185deg, rgba(0, 0, 255, 0.548), rgba(255, 255, 0, 0.183), rgba(0, 255, 255, 0.388));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+.app {
+    width: 100%;
+    max-width: 500px; 
+    padding: 20px;
+    background-color:white;
+    border-radius: 25px;
+    box-shadow: 2px 7px 8px 2px rgba(54, 226, 228, 0.696);
+}
+
+.app .heading h1 {
+    padding-top: 10px;
+    font-size: 24px; 
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; 
+}
+
+hr {
+    border: 2px solid rgb(235, 72, 140);
+    margin: 10px 0;
+}
+
+.questioncontainer p {
+    margin-top: 15px;
+    padding: 7px;
+    color: black;
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.answer {
+    margin: 5px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.btn {
+    width: 100%;
+    max-width: 400px; 
+    text-align: left;
+    padding: 8px; 
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: #8805466f;
+    color: white;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+.btnnext {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; 
+}
+
+#nextbutton {
+    background: #880547;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Classes added by JavaScript */
+.correct {
+    background: #9aeadc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+
+@media (max-width: 768px) {
+    .app {
+        width: 90%;
+    }
+    .app .heading h1 {
+        font-size: 22px;
+    }
+    .questioncontainer p {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app {
+        width: 100%;
+    }
+    .app .heading h1 {
+        font-size: 20px;
+    }
+    .questioncontainer p {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    #nextbutton {
+        width: 120px;
+        padding: 10px;
+    }
+}
